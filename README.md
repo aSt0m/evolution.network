@@ -1,3 +1,3 @@
 # evolution.network
 
->THe nokwledge is power
+>The nokwledge is power
