@@ -319,12 +319,11 @@ img{
 .container-hero{
        
    
-    height:auto;
+  
     background-image:url("https://picsum.photos/200/300?random=1");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    width:100%;
     height:80vh;
     padding-top:20vh;
     display:flex;
@@ -334,8 +333,9 @@ img{
 }
 .container-title{
     height:4rem;
-    position:absolute;
+    position:relative;
     margin:0;
+    margin-bottom:25rem;
    
    
 }
@@ -343,8 +343,11 @@ img{
     color:#fff;
     font-size:20rem;
     margin:0;
-    letter-spacing: 5rem;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2rem;
+    text-transform:capitalize;
+    text-align: end;
+ 
 
 }
 .subtitle-hero{
@@ -352,23 +355,41 @@ img{
     color:#fff;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:right;
 
+}
+.swiper-header{
+    height:10rem;
+    overflow:hidden;
+}
+.swiper-slide.text-swiper{
+    color:rgb(208, 222, 228);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:6rem;
+    height:100%;
+    margin:0;
+    
 }
 @media (max-width: 768px){
     .container-hero{
-        border: 1px solid red;
+        width:100%;
+        
     }
     .container-title{
-      
+        flex-wrap:wrap;
+        justify-content:center;
         width:100%;
     }
     .title-hero{
-        
-        font-size: 4rem;
+        text-align:center;
+        font-size: 10rem;
+        letter-spacing:.5rem;
     }
     .subtitle-hero{
         font-size:2.5rem;
+        
     }
 }
 .section-main{
@@ -394,6 +415,7 @@ img{
 }
 @media (max-width: 768px){
     .section-main{
+        height:50vh;
         padding:2rem;
     }
     .video{
@@ -404,13 +426,14 @@ img{
     }
 }
 .section-carrousel{
-    height:100vh;
+    height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     position:relative;
     z-index:0; 
+    padding:10rem 0;
 }
 
  .title-swiper{
@@ -444,6 +467,7 @@ img{
     .section-carrousel{
         width:80%;
         margin:0 auto;
+        padding:0;
     }
     .title-swiper{
         text-align:center;
@@ -569,6 +593,11 @@ img{
     padding:1rem 2rem;
     color:rgba(4, 50, 148,1);
 }
+@media (max-width: 768px){
+    .container-learn{
+        height:100%;
+    }
+}
 .footer{
     height:100%;
     background:#F5F5F5;
@@ -619,6 +648,22 @@ img{
     .container-footer{
         flex-direction:column;
     }
+    .nav-footer{
+        height:100%;
+        padding:2rem;
+      flex-wrap:wrap;
+        
+        
+    }
+    .link-footer{
+        height:3rem;
+    }
+    .contact{
+      
+        grid-column:1/3;
+        grid-row:3/4
+    }
+    
 }
  .shoping-cart{
     height:4rem;
@@ -632,6 +677,7 @@ img{
     background:#ffffff
     
 }
+
 .img-cart{
     height:4rem;
     width:4rem;
@@ -670,7 +716,13 @@ img{
     left:0;
     
 }  
+@media (max-width: 768px){
 
+.shoping-cart{
+    top:70rem;
+    right:5rem;      
+    }
+}
 
 
 /* Accordion */
