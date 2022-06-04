@@ -622,7 +622,7 @@ img{
     background:#F5F5F5;
 }
 .container-footer{
-    height:30vh;
+    height:100%;
     padding: 2rem;
     display:flex;
     justify-content:space-between;
