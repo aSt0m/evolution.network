@@ -1,6 +1,7 @@
 
 :root{
     --color-banner:#F5F5F5;
+    --color-main:#E91D75;
 }
 
 
@@ -122,12 +123,12 @@ img{
     }
 }
 .nav-down{
-    height:12vh; 
+    height:11vh; 
     display:flex;
     align-items:center;
     justify-content:space-between;
-    background:rgb(199, 195, 195);
-    box-shadow: 0px 4px 5px 0px rgba(237, 232, 232, 0.75);
+    background:rgb(231, 197, 197);
+    box-shadow: 0px 4px 5px 0px rgba(201, 201, 201, 0.75);
     
     
 }
@@ -141,6 +142,9 @@ img{
 }
 .nav-down-left{
     width:12rem;
+}
+.container-img-nav-down{
+    height:100%;
 }
 .nav-down-right{
     display:flex;
@@ -241,7 +245,7 @@ img{
     color:#575861;
     text-transform:capitalize;
     margin:0;
-    height:11rem;
+    height:7.5rem;
     display:flex;
     align-items:center;
   
@@ -249,7 +253,7 @@ img{
 
 }
 .link-2:hover {
-    box-shadow:0 4px  #b2e1f5;
+    box-shadow:0 4px  #F41E7B;
     transition:.5s;
     cursor:pointer;
     position:relative;
@@ -264,11 +268,11 @@ img{
 .menu-drop{
     background:rgba(254, 254, 254);
     width:100%;
-    border-top:4px solid #000;
+    border-top:2px solid #000;
     left:0;
     height:auto;
     opacity:0;
-    
+    top:19.5vh;
     position:absolute;
     visibility:hidden;
    
@@ -280,10 +284,10 @@ img{
     position:absolute;
     bottom:5rem;
     left:0;
-    background: radial-gradient(circle, #00A7B5 20%, #ffffff 100%);
-    height:1%;
+    background: radial-gradient(circle ,#e67c6e, #E91D75 , #ffffff 100%); 
+    height:2px;
     width:100%;
-    box-shadow: 12px 13px 20px #000;
+  
 }
 .title-main-drop{
     padding:2rem 0 0 0;
@@ -307,7 +311,7 @@ img{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:30vh;
+    height:40vh;
     width:100%;
     
 }
@@ -714,6 +718,7 @@ img{
     text-align:left;
 }
 .copy{
+    text-align:left;
     font-size:1.4rem;
 }
 .title-contain-footer{
@@ -799,7 +804,7 @@ img{
     border-radius: 6px;
     border:1px solid #2D91CE;
     position:fixed;
-    top:60rem;
+    top:85%;
     right:10rem;
     display:inline-block;
     background:#ffffff
@@ -1109,6 +1114,141 @@ img{
 }
 
 
+/* SHOP */
+.header-shop{
+    
+    padding-top:25vh;
+    background:#F6FCFE;
+}
+.container-header-shop{
+    height:100%;
+
+}
+.box-header-shop{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    
+}
+.box-header-shop__title-nav{
+    color:#615757;
+    margin:0;
+    font-size:3.5rem;
+    text-transform:uppercase;
+    font-weight:600;
+    border-bottom:4px solid #1767b3;
+    padding:0 0 4rem;
+}
+.box-header-shop__title{
+    color:#000;
+    margin:0;
+    text-transform:capitalize;
+    font-size:8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+
+
+}
+.section-grid-product{
+    height:100%;
+}
+
+.box-grid-product{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:auto;
+    gap: 4rem 10rem;
+    justify-items: center;
+  
+    
+}
+.box-grid-product__container-img{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.box-grid-product__img{
+    height:30rem;
+    filter: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.3));
+    transition:1s;
+    position:relative;
+    z-index:-1;
+    padding:8rem;
+    
+}
+
+
+.box-grid-product__title{
+    font-size:2.6rem;
+    text-decoration:none;
+    margin:1rem 0;
+    color: #515757;
+    text-transform:capitalize;
+}
+.box-grid-product__subtitle{
+    margin:1rem 0;
+    color:#615757;
+    font-size:2rem;
+}
+.box-grid-product__price{
+    margin:1rem 0;
+    font-size:1.8rem;
+}    
 
 
 
+/* ---Page => Personal care */
+.hero-personal{
+    max-height:80vh;
+}
+.container-hero-personal{
+    height:100%
+}
+
+
+.section-headband{
+    background:#1767B3;
+}
+
+
+
+
+
+/* ---Section personalcare */
+.section-personalcare{
+    height:100%;
+    background:#fff;
+
+}
+.container-personalcare{
+
+}
+.box-personalcare-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr)
+}
+
+
+
+
+/* --Section Wellness */
+
+.section-wellness{
+    height:100%;
+}
+.box-wellness-grid{
+  
+    display:grid;
+    place-items:center;
+    align-items:stretch;
+      grid-template-columns:repeat(4, 1fr)
+}
+.box-wellness-grid__item{
+    height:30rem;
+    widtH:30rem;
+    border: 1px solid red;
+}
