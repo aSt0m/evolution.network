@@ -9,11 +9,12 @@
 html{
     font-size: 62.5%;
     font-family: monospace;
+    background-color: rgba(0,0,0,.7);
 }
+
 body{
     font-family: 'Lato', sans-serif;
     overflow:auto;
-    
 
 }
 img{
@@ -1043,9 +1044,10 @@ img{
     width:10rem;
     text-decoration:none;
     font-size:2rem;
-    color:#0C9BD7;
-    border:2px solid #0c9bd7;
+    color:#6a5b65;
+    border:2px solid #e880c7;
     padding:2rem 5rem;
+    transition:all .5s ease; 
 }
 @media (max-width: 768px){
     .brand{
@@ -1169,7 +1171,10 @@ img{
     
 
 }
-
+.add-cart:hover{
+    color:rgb(228, 218, 218);
+    background:var(--color-main)
+}
 
 /* SHOP */
 .header-shop{
