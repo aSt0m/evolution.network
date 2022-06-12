@@ -1366,9 +1366,10 @@ img{
 }
 
 /* ---Section personalcare & wellness */
-.section-personalcare{
+.personalcare-section{
     height:100%;
     background:#fff;
+    padding:10rem 0;
 
 }
 .personalcare__container{
@@ -1421,8 +1422,8 @@ img{
     
 }
 .personalcare-grid__img{
-    height:20rem;
-    width:20rem;
+    height:15rem;
+    width:15rem;
     object-fit:cover;
 
 }
