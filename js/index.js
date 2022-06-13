@@ -96,9 +96,23 @@ ham.addEventListener('click', () => {
 });
 
 
+// carrito de compras
+
+const car = document.querySelector(".shopping-cart");
+const menuShop = document.querySelector('.menu-cart-section');
+const menuShopClose = document.querySelector('.menu-cart__close');
 
 
+car.addEventListener('click',()=>{
+menuShop.classList.toggle("active");
+car.style.right = "55rem";
+})
 
+menuShopClose.addEventListener('click',()=>{
+  
+  car.style.right = "15rem";
+  menuShop.classList.toggle("active");
+})
 
 
 

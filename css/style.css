@@ -9,7 +9,7 @@
 html{
     font-size: 62.5%;
     font-family: monospace;
-    background-color: rgba(0,0,0,.7);
+    
 }
 
 body{
@@ -302,6 +302,9 @@ img{
     padding:2rem 0 0 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:3rem;
+    font-weight:200;
+    text-transform:capitalize;
+    letter-spacing:1.5rem;
 
 }
 .container-menu-drop{
@@ -408,7 +411,7 @@ img{
 
 .container-hero{
     
-    background-image:url("../images/fabio-oyXis2kALVg-unsplash.webp");
+    background-image:url("../images/unplash.webp");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -428,7 +431,7 @@ img{
    
 }
 .title-hero{
-    color:#fff;
+    color:rgb(65, 63, 63);
     font-size:20rem;
     margin:0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -694,7 +697,8 @@ img{
 .band-color-section{
 
     height:60vh;
-    background:linear-gradient(45deg, #00eaff 10%,#d6e64b ), url(../images/imagen2.webp);
+    background:radial-gradient(ellipse at right, #0b27f8 10%,#d6e64b ),
+    radial-gradient(ellipse at center, #454759 10%,#ebeb29 ), url(../images/imagen2.webp);
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
@@ -857,12 +861,12 @@ img{
     height:4rem;
     padding:1rem;
     border-radius: 6px;
-    border:1px solid var(--color-main);
+    
     position:fixed;
     top:85%;
     right:10rem;
     display:inline-block;
-    /* background:linear-gradient(45deg, var(--color-main) ,#fff ) */
+    background:#fff; 
     
 }
 
@@ -871,6 +875,145 @@ img{
     width:4rem;
     -o-object-fit:cover;
        object-fit:cover;
+}
+
+/* Section shopping cart */
+.menu-cart-section{
+    height:100vh;
+    width:50rem;
+    position:fixed;
+    top:0;
+    right:-50rem;
+    z-index:10;
+    background:rgb(255, 255, 255);
+    transition:all 1s ease;
+    
+}
+.menu-cart-section.active{
+    right:0;
+}
+.menu-cart__container{
+    height:100%;
+}
+.menu-cart__box{
+    height:100%;
+
+}
+.menu-cart__box-product{
+height:50vh;
+border-bottom:1px solid #d6cdcd;
+overflow:auto;
+
+
+    
+}
+.menu-cart__box-product::-webkit-scrollbar{
+display:none;
+}
+.menu-cart__container-header{
+    height:6rem;
+    
+    padding:2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.menu-cart__header{
+    font-size:3.5rem;
+    font-weight:bold;
+    color:#797979;
+    text-transform:capitalize;
+}
+.menu-cart__close{
+    font-size:3rem;
+    cursor:pointer;
+}
+.menu-cart__list-product{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.menu-cart__container-image{
+   
+    width:20rem;
+    object-fit:cover;
+
+}
+.menu-cart__image{
+    height:100%;
+}
+.menu-cart__box-item{
+    width:100%;
+   display:flex;
+   flex-direction:column;
+   align-items:flex-start; 
+}
+.menu-cart__title-product{
+    font-size:2rem;
+    text-transform:capitalize;
+    margin:1rem 0;
+    color:#848576;
+}
+.menu-cart__title-product:before{
+    content:"♀";
+    position:absolute;
+    right:2rem;
+    
+}
+.menu-cart__price-product{
+    font-size:1.9rem;
+    
+    margin:1rem 0;
+}
+.menu-cart__container-input{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.menu-cart__input{
+    font-size:2rem;
+    width:4rem;
+    height:4rem;
+}
+.menu-cart__total{
+    margin-right:2rem;
+    font-size:1.8rem;
+
+}
+.menu-cart__container-subtotal{
+    margin:2rem 0;
+    
+    text-align:center;
+}
+.menu-cart__subtotal{
+    font-size:2rem;
+    text-transform:uppercase;
+    color:#757575;
+}
+.menu-cart__subtotal-value{
+    font-size:2rem;
+    font-weight:bold;
+}
+.menu-cart__paragraph{
+    text-align:center;
+    font-size:2rem;
+}
+.menu-cart__checkout, .menu-cart__continue{
+    display:block;
+    font-size:2rem;
+    text-transform:capitalize;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    padding:2rem ;
+    background:#EC2E84;
+    margin:2rem 4rem;
+    border-radius:3px;
+
 }
 .social-media{
     
@@ -1251,6 +1394,7 @@ img{
     margin:1rem 0;
     color: #515757;
     text-transform:capitalize;
+    cursor:pointer;
 }
 .box-grid-product__subtitle{
     margin:1rem 0;
@@ -1429,7 +1573,8 @@ img{
 .personalcare-grid__img{
     height:15rem;
     width:15rem;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
 
 }
 .personalcare-grid__title-item{
@@ -1442,12 +1587,80 @@ img{
     font-size:1.8rem;
     color:#797175;
 }
+/* Section banner-color */
+.banner-color-section{
+    height:70vh;
+    background: radial-gradient(ellipse at top, #fbca28, transparent),
+            radial-gradient(ellipse at right, #063cff, transparent),
+            radial-gradient(ellipse at left, #fb0404, transparent),
+            radial-gradient(closest-side, #1500ff, #ebf8e1, #05fa77),url(../images/imagen1.webp);
+    background-blend-mode: color;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+.banner-color__container{
+    height:100%;
+    padding:8rem;
+
+}
+.banner-color__box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.banner-color__title{
+    color:white;
+    font-size:6rem;
+    text-transform:uppercase;
+    letter-spacing:6px;
+
+}
+.banner-color__brand{
+    margin:0;
+    font-size:8rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:20px;
+
+    background:linear-gradient(90deg,#34C6F4,#ffff00,#FF6D92);
+    -webkit-background-clip:text;
+            background-clip:text;
+    -webkit-text-fill-color: transparent;
 
 
+}
+.banner-color__container-watch{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+.banner-color__subtitle{
+    color:#fff;
+    font-size:3rem;
+    font-weight:500;
+    word-spacing:6px;
+    margin:5rem 0;
 
+}
+.banner-color__button{
+    
+    font-size:2rem;
+    font-weight:bold;
+    word-spacing:4px;
+    letter-spacing:4px;
+    padding:2rem 4rem;
+    display:inline-block;
+    color:#fff;
+    text-transform:uppercase;
+    text-decoration:none;
+    border:2px solid #fff;
 
-/* --Section Wellness */
-
+    
+}
 
 
 /* Section Login */
