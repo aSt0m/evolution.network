@@ -104,14 +104,15 @@ const menuShopClose = document.querySelector('.menu-cart__close');
 
 
 car.addEventListener('click',()=>{
-menuShop.classList.toggle("active");
+menuShop.classList.toggle("activee");
 car.style.right = "55rem";
+
 })
 
 menuShopClose.addEventListener('click',()=>{
   
   car.style.right = "15rem";
-  menuShop.classList.toggle("active");
+  menuShop.classList.toggle("activee");
 })
 
 
