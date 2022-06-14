@@ -889,7 +889,8 @@ img{
     transition:all 1s ease;
     
 }
-.menu-cart-section.activee{
+/* .menu-cart-section */
+.activee{
     right:0;
 }
 .menu-cart__container{
