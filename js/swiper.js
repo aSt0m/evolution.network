@@ -49,7 +49,7 @@ var swipeHeader = new Swiper(".swiper-header", {
   //   el: '.swiper-scrollbar',
   // },
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   breakpoints: {
    

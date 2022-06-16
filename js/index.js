@@ -82,12 +82,20 @@ car.style.right = "55rem";
 
 menuShopClose.addEventListener('click',()=>{
   
-  car.style.right = "15rem";
+  // car.style.right = "15rem";
   menuShop.classList.toggle("activee");
 })
 
-
-
-
+const variable = document.querySelectorAll('.nav-down')
+const link = document.querySelectorAll('.link-2')
+link.forEach((element,i) => {
+  console.log(element,i)
+  
+ setInterval(() => {
+   console.log(element)
+ }, 5000);
+  
+  
+});
 
 
