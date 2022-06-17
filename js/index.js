@@ -1,3 +1,10 @@
+// Spinner
+
+  const spinner = document.querySelector('.spinner');
+window.addEventListener('load',()=>{
+  spinner.classList.toggle('spinner-2')
+})
+
 
 // const menuDrop = document.querySelector(".menu-drop");
 // const linkDown= document.querySelector(".linkDown");
@@ -86,16 +93,14 @@ menuShopClose.addEventListener('click',()=>{
   menuShop.classList.toggle("activee");
 })
 
-const variable = document.querySelectorAll('.nav-down')
-const link = document.querySelectorAll('.link-2')
-link.forEach((element,i) => {
-  console.log(element,i)
+// const variable = document.querySelectorAll('.nav-down')
+// const link = document.querySelectorAll('.link-2')
+// link.forEach((element,i) => {
+//   console.log(element,i)
   
- setInterval(() => {
-   console.log(element)
- }, 5000);
+
   
   
-});
+// });
 
 

@@ -296,7 +296,7 @@ img{
     left:0;
     height:auto;
     opacity:0;
-    top:19.5vh;
+    top:18.5vh;
     position:absolute;
     visibility:hidden;
     box-shadow: 0px 2px 30px rgb(192, 187, 187);
@@ -495,7 +495,7 @@ img{
     color:#fff;
     display:flex;
     position:absolute;
-    z-index:10;
+    z-index:9;
     text-transform:uppercase;
     top:95%;
     left:0;
@@ -507,6 +507,80 @@ img{
     align-items:right;
 
 }
+
+
+.spinner{
+    background:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center !important;
+    align-items:center !important;
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:11;
+ 
+}
+
+.spinner-quad {
+    
+    height: 12rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* overflow: hidden; */
+    background: #ffffff;
+    /* border: 1px solid red; */
+    
+  } 
+
+  .spin {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    /* transform: translateZ(0) scale(1); */
+    /* backface-visibility: hidden; */
+    /* transform-origin: 0 0; */
+    /* border: 1px solid rgb(0, 255, 102); */
+ 
+   
+  }
+
+  .spin div {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #E91D76;
+    animation: spin 1.408450704225352s linear infinite;
+    /* box-sizing: content-box; */
+    /* border: 1px solid red; */
+   
+  
+    
+}
+  @keyframes spin {
+    0% {
+      background: #eeb7cf
+    }
+
+    12.5% {
+      background: #d5739d
+    }
+
+    12.625% {
+      background: #e9428a
+    }
+
+    100% {
+      background: #E91D76
+    }
+  }
+  .spinner-2{
+    display:none;
+}
+
+ 
 /* .swiper-header{
     height:10rem;
     overflow:hidden;
