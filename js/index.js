@@ -103,4 +103,18 @@ menuShopClose.addEventListener('click',()=>{
   
 // });
 
+const arregloImagenes = ['item_1','item_2','item_3','item_4'];
+
+const funcionRecorre = ()=>{
+  arregloImagenes.forEach((nombre,indice, arreglo)=>{
+    if(indice=arregloImagenes){
+      console.log(nombre)
+      console.log('el indice es igual al arreglo')
+    }
+    indice++
+  })
+  setInterval(funcionRecorre , 5000);
+  
+}
+
 

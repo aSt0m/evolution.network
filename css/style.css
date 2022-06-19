@@ -353,7 +353,7 @@ img{
     text-align:center;
 }
 .menu-drop__container-link:hover{
-    filter: drop-shadow(0 0 10px rgb(227, 11, 11));
+    filter: drop-shadow(0 0 10px rgb(139, 137, 137));
 }
 .img-menu-drop{
     width:50%;
@@ -610,7 +610,7 @@ img{
     width:100%;
     object-fit: cover;
     overflow-x:hidden;
-    background: #000;
+;
 }
 @media (max-width: 768px){
     .container-hero{
@@ -677,22 +677,36 @@ img{
     padding:10rem 0;
 }
 
- .title-swiper{
+ .carrousel__container-title{
      font-size:2.5rem;
      text-transform:uppercase;
      color:#8e8a8a;
      font-weight:100;
-     margin:6rem 0;
+     margin:0;
      position:relative;
+     height:8rem;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+     
  }
- .title-swiper:before{
-    content:url(../images/MarketPlaceLogo.webp);
+ /* .carrousel__container-title:before{
+    content:url("../images/MarketPlaceLogo.webp");
     display:inline-flex;
     position:absolute;
-    height:8rem;
-    width:1rem;
+    height:8rem ;
+    border: 1px solid red;
+    
     top:-2rem;
     left:-8rem;
+ } */
+ .carrousel__title{
+    color:#707576;
+    margin:0;
+ }
+ .carrousel__image{
+    height:8rem;
+    margin-right:2rem;
  }
 .swiper {
     width: 80%;
@@ -986,7 +1000,7 @@ img{
     text-transform:uppercase;
     padding:1rem 2rem;
     color:#fff;
-    background:#c80b04;
+    background:var(--color-main);
     font-size:2.4rem;
 }
 .footer{
@@ -1074,7 +1088,7 @@ img{
 .nav-footer{
     background:#555555;
     height:100%;
-    width:100%;
+    
 }
 .nav-footer{
     height:12vh;
