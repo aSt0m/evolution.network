@@ -79,7 +79,13 @@ ham.addEventListener('click', () => {
 const car = document.querySelector(".shopping-cart");
 const menuShop = document.querySelector('.menu-cart-section');
 const menuShopClose = document.querySelector('.menu-cart__close');
+const containerDrop = document.querySelector('.container-menu-drop');
+const categoria = document.querySelector(".categoria");
 
+categoria.addEventListener('click',()=>{
+  containerDrop.classList.toggle('act')
+ 
+})
 
 car.addEventListener('click',()=>{
 menuShop.classList.toggle("activee");
@@ -116,5 +122,11 @@ const funcionRecorre = ()=>{
   setInterval(funcionRecorre , 5000);
   
 }
+
+
+
+
+
+
 
 
