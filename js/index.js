@@ -82,10 +82,10 @@ const menuShopClose = document.querySelector('.menu-cart__close');
 const containerDrop = document.querySelector('.container-menu-drop');
 const categoria = document.querySelector(".categoria");
 
-categoria.addEventListener('click',()=>{
-  containerDrop.classList.toggle('act')
+// categoria.addEventListener('click',()=>{
+//   containerDrop.classList.toggle('act')
  
-})
+// })
 
 car.addEventListener('click',()=>{
 menuShop.classList.toggle("activee");
@@ -109,19 +109,19 @@ menuShopClose.addEventListener('click',()=>{
   
 // });
 
-const arregloImagenes = ['item_1','item_2','item_3','item_4'];
+// const arregloImagenes = ['item_1','item_2','item_3','item_4'];
 
-const funcionRecorre = ()=>{
-  arregloImagenes.forEach((nombre,indice, arreglo)=>{
-    if(indice=arregloImagenes){
-      console.log(nombre)
-      console.log('el indice es igual al arreglo')
-    }
-    indice++
-  })
-  setInterval(funcionRecorre , 5000);
+// const funcionRecorre = ()=>{
+//   arregloImagenes.forEach((nombre,indice, arreglo)=>{
+//     if(indice=arregloImagenes){
+//       console.log(nombre)
+//       console.log('el indice es igual al arreglo')
+//     }
+//     indice++
+//   })
+//   setInterval(funcionRecorre , 5000);
   
-}
+// }
 
 
 

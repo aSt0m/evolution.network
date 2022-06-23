@@ -1240,7 +1240,7 @@ padding:0;
     position:fixed;
     top:0;
     right:-50rem;
-    z-index:10;
+    z-index:100;
     background:rgb(255, 255, 255);
     transition:all 1s ease;
     
@@ -2161,7 +2161,36 @@ display:none;
     margin: 3rem 0;
 }
 
+/* nitrox */
+.nitroxweb-section{
 
-
-
-
+}
+.header-nitrox__container{
+    background:#E2EDED;
+    height:80vh;
+    
+    padding:15vh;
+  
+    /* position:relative;
+    z-index:14; */
+}
+.nitrox__title{
+    font-size:4rem;
+    margin:0;
+}
+.nitrox__subtitle{
+    font-size:3rem;
+}
+.nitrox__header-image{
+    margin-top:20rem;
+    height:80rem;;
+}
+.nitrox{
+    background:#DE2750;
+    border:none;
+    color:#fff;
+}
+.nitro-svg{
+    position:relative;
+    z-index:-1;
+}
