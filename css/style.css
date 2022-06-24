@@ -49,6 +49,10 @@ img{
 .text-right{
     text-align:right;
 }
+.cl-main{
+    color:var(--color-main);
+    font-weight:600;
+}
 /* Especiales */
 /* color button swiper */
 .swiper-button-prev, .swiper-button-next{
@@ -2162,14 +2166,12 @@ display:none;
 }
 
 /* nitrox */
-.nitroxweb-section{
 
-}
 .header-nitrox__container{
     background:#E2EDED;
     height:80vh;
-    
-    padding:15vh;
+   
+    padding-top:15vh;
   
     /* position:relative;
     z-index:14; */
@@ -2178,19 +2180,70 @@ display:none;
     font-size:4rem;
     margin:0;
 }
+.nitrox__container-title{
+    height:100%;
+}
 .nitrox__subtitle{
-    font-size:3rem;
+    font-size:2.5rem;
+    margin:6rem 0;
+    line-height:4rem;
+}
+.nitrox__test-free{
+    margin-top:4rem ;
+    font-size:2rem;
+    font-weight:600;
 }
 .nitrox__header-image{
     margin-top:20rem;
     height:80rem;;
 }
 .nitrox{
-    background:#DE2750;
+    background:var(--color-main);
     border:none;
     color:#fff;
+    margin:1rem 0;
 }
-.nitro-svg{
+.nitrox__text-bottom{
+    margin:0 ;
+   
+    width:100%;
+    font-size:2.5rem;
+    position:absolute;
+    bottom:-25rem;
+    text-align:center;
+    
+}
+    .nitro-svg{
+        position:relative;
+        z-index:-1;
+}
+
+.back-circle{
+    background:#51c0ff ;
+    height:60rem;
+    width:60rem;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70%  ;
     position:relative;
-    z-index:-1;
+}
+.nitrox__video{
+    height:50rem;
+    width:50rem;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:0 auto;
+}
+
+.funnels__box{
+    text-align:center;
+}
+
+
+.bg-1{
+    background:#FFC6B2;
+}
+.bg-2{
+    background:#E2EDED;
 }
