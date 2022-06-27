@@ -1468,7 +1468,7 @@ display:none;
 
 
 /* Accordion */
-@media (max-width:768px){
+/* @media (max-width:768px){
 
     .accordion{
         max-width:800px;
@@ -1516,7 +1516,7 @@ display:none;
 }
 
 
-}
+} */
 
 
 /* Paginas internas */
@@ -1533,16 +1533,7 @@ display:none;
     /* background-attachment: fixed; */
     background-repeat:no-repeat;
 }
-@media (max-width:768px){
-    .container-header{
-       
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        
-    }
-    
-}
+
 .content-header{
     height:100vh;
    
@@ -1564,7 +1555,7 @@ display:none;
     object-fit:contain;
 }
 .container-header-right{
-      min-width:60rem;
+      min-width:50rem;
       height:100%;
       display:flex;
       flex-direction:column;
@@ -1577,6 +1568,49 @@ display:none;
 .img-header{
     height:10rem;
 }
+
+@media (max-width: 768px){
+    .container-header{
+        height:100vh;
+       
+        padding-top:20vh;
+        background:url("../images/banner_principal.webp");
+       
+        background-size:cover;
+        background-position:center;
+        /* background-attachment: fixed; */
+        background-repeat:no-repeat;
+    }
+    .container-header{
+        background-image: radial-gradient(rgb(0, 0, 0) 0%,  rgb(57, 44, 44) ),url("../images/banner_principal.webp");
+        background-size:cover;
+        background-position:center;
+        background-blend-mode: screen;
+    }
+    .header-left{
+        display:none;
+    }
+    .header-right{
+        height:100%;
+        width:100%;
+    }
+    .container-header-right{   
+        justify-content:center;
+        width:100%;  
+        outline:1px solid rgb(255, 0, 0);
+    }
+    .container-img-right{
+        height:30rem;
+
+    }
+    .img-header{
+        height:15rem;
+    }
+}
+
+
+
+
 .container-brand{
     font-size:5rem;
 }
@@ -1710,15 +1744,24 @@ display:none;
     width:50%;
 }
 @media (max-width: 768px){
+    .section-buy{
+        height:80rem;
+    }
     .container-main-inner{
-        flex-direction:column;
+       align-items:flex-start;
+     
     }
-    .btn.want{
-        display:block;
-        width:60%;
-        margin:0 auto;
-        border: 1px solid red;
+    .container-img-main-inner{
+      
+        text-align:center;
     }
+    .img-main-inner{
+        width:20rem;
+        height:20rem;
+        margin:4rem 0;
+    }
+   
+   
 }
 
 
@@ -1780,6 +1823,25 @@ display:none;
 .container-right-unknown{
     width:50%;
 }
+@media (max-width: 768px){
+    .container-section-unknown{
+        flex-direction:column-reverse;
+    }
+    .container-left-unknown{
+        width:100%;
+    }
+    .text-main__contain{
+        min-width:30rem;
+        font-size:1.8rem;
+        font-weight:600;
+        color:rgb(117, 113, 113);
+    }
+    .btn.info{
+        order:3;
+        padding:1.5rem;
+    }
+    
+}
 
 /* Section cronos */
 .cronos-section{
@@ -1801,10 +1863,20 @@ display:none;
     font-size:1.8rem;
     color:#767377;
 }
+@media (max-width: 768px){
+    .cronos__subtitle{
+        text-align:center;
+    }
+    .cronos__paragraph{
+        text-align:center;
+    }
+}
+
+/* Section buy */
 
 .section-buy{
     background:#FAFAFA;
-    height:80vh;
+    height:100%;
 }
 .input{
  background:transparent;
@@ -1825,9 +1897,13 @@ display:none;
     color:rgb(228, 218, 218);
     background:var(--color-main)
 }
-
+@media (max-width: 768px){
+    .container-main-inner{
+        flex-direction:column;
+    }
+}
 /* SHOP */
-.header-shop{
+/* .header-shop{
     
     padding-top:25vh;
     background:#F6FCFE;
@@ -1919,12 +1995,12 @@ display:none;
 .box-grid-product__price{
     margin:1rem 0;
     font-size:1.8rem;
-}    
+}     */
 
 
 
 /* ---Page => Personal care */
-.hero-personal{
+/* .hero-personal{
     min-height:80vh;
 }
 .container-hero-personal{
@@ -2029,10 +2105,10 @@ display:none;
     text-transform:uppercase;
     margin-top:3rem;
     
-}
+} */
 
 /* ---Section personalcare & wellness */
-.personalcare-section{
+/* .personalcare-section{
     height:100%;
     background:#fff;
     padding:10rem 0;
@@ -2103,7 +2179,7 @@ display:none;
 .personalcare-grid__subtitle-item{
     font-size:1.8rem;
     color:#797175;
-}
+} */
 /* Section banner-color */
 .banner-color-section{
     height:70vh;
@@ -2210,7 +2286,10 @@ display:none;
     margin: 3rem 0;
 }
 
-/* nitrox */
+
+
+
+/* Nitrox */
 
 .header-nitrox__container{
     background:#E2EDED;
@@ -2240,7 +2319,9 @@ display:none;
 }
 .nitrox__header-image{
     margin-top:20rem;
-    height:80rem;;
+    height:60rem;;
+    object-fit:cover;
+    /* padding:2rem; */
 }
 .nitrox{
     background:var(--color-main);
@@ -2262,7 +2343,11 @@ display:none;
         position:relative;
         z-index:-1;
 }
-
+@media (max-width: 768px){
+    .content-header{
+        
+    }
+}
 .back-circle{
     background:#51c0ff ;
     height:60rem;
@@ -2343,28 +2428,44 @@ display:none;
 }
  .nitrox-marketing__container{
     height:100%;
-    border: 1px solid red;
 } 
 .nitrox-marketing__box{
+    height:100vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    /* position:relative; */
+    position:relative;
 } 
 .nitrox-marketing__container-left{
     width:50%;
+    height:100%;
+    overflow:hidden;
    
 }
 .nitrox-marketing__container-right{
     width:50%;
-    outline:1px solid #00eaff;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+
     
 }
-
+.nitrox-marketing__box-right{
+    width:30rem;
+    padding:40rem 0;
+}
+.nitrox-marketing__container-image{
+    height:140%;
+}
+.nitrox-marketing__image{
+    /* height:90rem; */
+}
 .nitrox-marketing__image-absolute{
-    /* position: absolute; */
+    position:absolute;
     top: 50%;
-    left: 0%;
+    left: 50%;
     transform: translate(-50%, -50%);
    
 }
@@ -2421,9 +2522,13 @@ padding:10rem 0;
 
 }
 .nitrox-customer__card{
+    max-width:30rem;
+    min-height:50rem;
+    line-height:3.5rem;
+    color:#585a5b;
     margin:2rem;
     padding:4rem;
-    box-shadow: 0px 0px 21px 0px rgba(15,13,13,0.62);
+    box-shadow: 0px 0px 21px 0px rgba(15,13,13,0.22);
 }
 .nitrox-customer__history{
   display:flex;
@@ -2432,4 +2537,14 @@ padding:10rem 0;
   justify-content:center;
   margin-top:5rem;
   padding:5rem;
+}
+.nitrox-customer__card-name{
+    font-weight:bold;
+    font-size:2rem;
+    color:#3b3a3a;
+    display:block;
+}
+.nitrox-customer__card-business{
+    font-size:1.6rem;
+    font-weight:600;
 }
