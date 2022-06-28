@@ -101,7 +101,7 @@ h4{
 .container-navs{
     position:fixed;
     z-index:10;
-    height:20vh;
+    height:16vh;
     width:100%;
     
 }
@@ -121,12 +121,10 @@ h4{
 }
 .container-nav-up{
     width:85%;
-   
     display:flex;
     align-items:center;
     justify-content: space-between;
     z-index:10;
-
 }
 
 .nav-up-right{
@@ -201,7 +199,7 @@ h4{
 /* nav-down */
  
 .nav-down{
-    height:11vh; 
+    height:8vh; 
   
     background:rgb(255, 255, 255);
     box-shadow: 0px 4px 5px 0px rgba(201, 201, 201, 0.75);
@@ -266,7 +264,7 @@ h4{
     border-top:2px solid #000;
     left:0;
     height:auto;
-    top:18.5vh;
+    top:16.5vh;
     position:absolute;
     opacity:0;
     visibility:hidden;
@@ -383,8 +381,8 @@ h4{
         background-color: #827A85;
         display:block;
         height:3px;
-        width: 28px;
-        margin:10px auto;
+        width: 25px;
+        margin:6px auto;
         border-radius:2px;    
     }
     .ham{
@@ -413,7 +411,7 @@ h4{
     height:50rem;
     /* padding:8rem; */
      position:absolute; 
-   top:18vh;
+   top:16vh;
     left:0;
     margin:0 auto;
    display:none;
@@ -515,7 +513,7 @@ padding:0;
     position:center;
     background-repeat:no-repeat;
     height:100%;
-    padding-top:20vh;
+    padding-top:16vh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -702,6 +700,10 @@ padding:0;
     .subtitle-hero{
         font-size:2.5rem;
         
+    }
+    .hero-video{
+        margin-top:-3rem;
+        outline: 1px solid red;
     }
 }
 .section-main{
@@ -2539,7 +2541,9 @@ font-weight:600;
         padding-left:0;
     }
 }
-
+.analytics-section{
+    padding:8rem 0;
+}
 .analytics__container-title{
     text-align:center;
 }
@@ -2566,6 +2570,7 @@ font-weight:600;
 }
 .nitrox-marketing-section{
     height:100%;
+    padding:8rem 0;
 }
  .nitrox-marketing__container{
     height:100%;
@@ -2604,7 +2609,31 @@ font-weight:600;
     transform: translate(-50%, -50%);
    
 }
-
+@media (max-width: 768px){
+    .nitrox-marketing__box{
+        height:100%;
+        width:100%;
+        padding:0;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .nitrox-marketing__box-right{
+        padding:3rem 0;
+        width:80%;
+    }
+    .nitrox-marketing__container-left{
+        width:100%;
+    }
+    .nitrox-marketing__container-right{
+        width:100%;
+    }
+    .nitrox-marketing__image{
+        height:200%;
+    }
+    .nitrox-marketing__image-absolute{
+        display:none;
+    }
+}
 .yourbrand__box{
     display:flex;
     flex-direction:column;
@@ -2626,8 +2655,19 @@ font-weight:600;
     margin:10rem 5rem;
 }
 
+@media (max-width: 768px){
+    .yourbrand__card{
+        margin:3rem 0;
+    }
+    .yourbrand__container-cards{
+       
+        flex-direction:column;
+      
+    }
+}
 
 .nitro-engage__box{
+    padding:8rem 0;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -2682,4 +2722,9 @@ padding:10rem 0;
 .nitrox-customer__card-business{
     font-size:1.6rem;
     font-weight:600;
+}
+@media (max-width: 768px){
+    .nitrox-customer__cards-opinions{
+        flex-direction:column;
+    }
 }
