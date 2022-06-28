@@ -3,6 +3,7 @@
     --color-banner:#F5F5F5;
     --color-main:#E91D75;
     --color-services:#7C2A8B;
+    --color-evolution:#A0A2A4;
     scrollbar-highlight-color: royalblue;
     scrollbar-color: #000;
     scrollbar-color:  var(-color-main);
@@ -110,11 +111,11 @@ h4{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:8vh;
+    height:5vh;
     margin:0 auto;
-    background:rgb(190, 178, 178);
+    background:var(--color-evolution);
     border: 1px solid #b2e1f5;
-    
+   
 }
 .nav-up-left{
     width:100%;
@@ -151,7 +152,7 @@ h4{
     text-transform:uppercase;
     min-width:14rem;
     margin:0 3rem;
-    color:#575861;
+    color:#2e2e30;
     font-size:1.7rem;
 }
 .btn-reg{
@@ -264,7 +265,7 @@ h4{
     border-top:2px solid #000;
     left:0;
     height:auto;
-    top:16.5vh;
+    top:13vh;
     position:absolute;
     opacity:0;
     visibility:hidden;
@@ -321,9 +322,10 @@ h4{
     width:100%;
     text-align:center;
 }
-.menu-drop__container-link:hover{
-    filter: drop-shadow(0 0 10px rgb(139, 137, 137));
-}
+/* .menu-drop__container-link:hover{
+    -webkit-filter: drop-shadow(0 0 10px rgb(139, 137, 137));
+            filter: drop-shadow(0 0 10px rgb(139, 137, 137));
+} */
 .img-menu-drop{
     width:50%;
   
@@ -395,7 +397,7 @@ h4{
     cursor:pointer;
     position: absolute; 
     right:25px;
-    top:8rem;
+    top:6rem;
     transition: 0.2s  0.1s; 
   
         
@@ -411,7 +413,7 @@ h4{
     height:50rem;
     /* padding:8rem; */
      position:absolute; 
-   top:16vh;
+   top:13vh;
     left:0;
     margin:0 auto;
    display:none;
@@ -513,7 +515,7 @@ padding:0;
     position:center;
     background-repeat:no-repeat;
     height:100%;
-    padding-top:16vh;
+    padding-top:13vh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -552,7 +554,8 @@ padding:0;
     
     height:30rem;
     position:relative;
-    object-fit:contain;
+    -o-object-fit:contain;
+       object-fit:contain;
     /* border: 1px solid rgb(0, 51, 255); */
 }
 .hero__subtitle{
@@ -607,7 +610,8 @@ padding:0;
     position: relative;
  
     transform: translateZ(0) scale(1);
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     transform-origin: 0 0;
     /* border: 1px solid rgb(0, 255, 102); */
  
@@ -619,13 +623,31 @@ padding:0;
     width: 15px;
     height: 15px;
     background: #E91D76;
-    animation: spin 1.408450704225352s linear infinite;
+    -webkit-animation: spin 1.408450704225352s linear infinite;
+            animation: spin 1.408450704225352s linear infinite;
     /* box-sizing: content-box; */
     /* border: 1px solid red; */
    
   
     
 }
+  @-webkit-keyframes spin {
+    0% {
+      background: #eeb7cf
+    }
+
+    12.5% {
+      background: #d5739d
+    }
+
+    12.625% {
+      background: #e9428a
+    }
+
+    100% {
+      background: #E91D76
+    }
+  }
   @keyframes spin {
     0% {
       background: #eeb7cf
@@ -673,9 +695,10 @@ padding:0;
 } */
 .hero-video{
     position:relative;
-    height:80vh;
+    height:87vh;
     width:100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     overflow-x:hidden;
 ;
 }
@@ -702,8 +725,8 @@ padding:0;
         
     }
     .hero-video{
-        margin-top:-3rem;
-        outline: 1px solid red;
+        margin-top:-5rem;
+        
     }
 }
 .section-main{
@@ -1356,7 +1379,8 @@ display:none;
 .menu-cart__container-image{
    
     width:20rem;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
 
 }
 .menu-cart__image{
@@ -1564,7 +1588,8 @@ display:none;
 .header-images{
     height:40rem;
     width:40rem;
-    object-fit:contain;
+    -o-object-fit:contain;
+       object-fit:contain;
 }
 .container-header-right{
       width:50rem;
@@ -1683,7 +1708,10 @@ display:none;
     height:100%;
 }
 .blank__box{
-    height:40rem;   
+    height:40rem;  
+    display:flex;
+    justify-content:space-between;
+    align-items:center; 
 }
 .blank__container-image{
     display:flex;
@@ -2366,7 +2394,8 @@ font-weight:600;
     max-width:100%;
     height:60rem;
     width:60rem;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
     
 }
 .nitrox{
@@ -2420,7 +2449,8 @@ font-weight:600;
         margin-top:0;
         height:30rem;;
         width:30rem;
-        object-fit:cover;
+        -o-object-fit:cover;
+           object-fit:cover;
           
        
     }
