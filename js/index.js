@@ -2,7 +2,7 @@
 
   const spinner = document.querySelector('.spinner');
 window.addEventListener('load',()=>{
-  spinner.classList.toggle('spinner-2')
+  spinner.classList.toggle='spinner-2'
 })
 
 
@@ -19,41 +19,6 @@ window.addEventListener('load',()=>{
 
 
 
-
-// //**Carrousel */
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
-//   slidesPerView: "1",
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//     color: "000",
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-//   autoplay: {
-//     delay: 5000,
-//   },
-//   breakpoints: {
-//     // when window width is >= 768px
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 20
-//     },
-//   }
-// });
 
 
 /**Hamburguer menu */
@@ -108,20 +73,6 @@ menuShopClose.addEventListener('click',()=>{
   
   
 // });
-
-// const arregloImagenes = ['item_1','item_2','item_3','item_4'];
-
-// const funcionRecorre = ()=>{
-//   arregloImagenes.forEach((nombre,indice, arreglo)=>{
-//     if(indice=arregloImagenes){
-//       console.log(nombre)
-//       console.log('el indice es igual al arreglo')
-//     }
-//     indice++
-//   })
-//   setInterval(funcionRecorre , 5000);
-  
-// }
 
 
 

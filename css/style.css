@@ -3059,10 +3059,11 @@ padding:10rem 0;
 }
 .contain__paragraph{
     font-size:1.5rem;
-    border:1px solid rgb(197, 195, 195);
+    border:1px solid #c5c3c3;
     margin:0;
     padding:2rem;
     border-radius:0 0 10px 10px;
+    color: #616060;
 }
 .contentBx.active .content{
     height:100%;
@@ -3072,3 +3073,31 @@ padding:10rem 0;
 
 
 /* }  */
+/* section tabs */
+.section-tabs{
+    height:80vh;
+}
+.tabs__box{
+    height:50rem;
+    background:#c5c3c3;
+    padding: 0 2rem;
+    position:relative;
+}
+.tabs__container-title{
+    display:flex;
+}
+.tabs__title{
+    margin:0 1rem;
+    font-size:2.2rem;
+    font-weight:400;
+    background:#b1afaf;
+    ;
+
+}
+.tabs__bloque{
+    position:absolute;
+    opacity:0;
+}
+.tabs__bloque.active{
+    opacity:1;
+}
