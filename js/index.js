@@ -1,8 +1,13 @@
 // Spinner
 
+//   const spinner = document.querySelector('.spinner');
+// window.addEventListener('load',()=>{
+//   spinner.classList.toggle='spinner-2'
+// })
+
   const spinner = document.querySelector('.spinner');
 window.addEventListener('load',()=>{
-  spinner.classList.toggle='spinner-2'
+  spinner.classList.toggle('spinner-2')
 })
 
 
