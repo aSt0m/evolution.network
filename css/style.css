@@ -167,7 +167,9 @@ h4{
 }
 .lang{
     text-align:right;
+    position:relative;
 }
+
 .login{
     font-weight:bold;
 }
@@ -1378,7 +1380,7 @@ display:none;
     cursor:pointer;
 }
 .menu-cart__list-product{
-    
+    padding:2rem;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -1708,7 +1710,7 @@ display:none;
 
 }
 .services__band-title{
-    color:#302e2e;
+    color:rgb(39, 39, 39);
 }
 
 
@@ -2880,21 +2882,70 @@ padding:10rem 0;
 /* Us */
 .us__content-header{
     height:100vh;
-    background:#2d2f31;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    padding-top:20vh;
+    background:url(../images/Nosotros__Banner_Principal_Nosotros.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  
+}
+.banner__paragraph{
+    font-size:2rem;
+    font-weight:300;
+    word-spacing: 2px;;
+    line-height:2.5rem;
+    color:#fff;
+
 }
 .section-banner-us{
     height:40vh;
-    background:var(--color-evolution);
-    color:#fff;
+    background:url(../images/Nosotros__Banner_2.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
 }
-
+.section-banner-us-2{
+    height:40vh;
+    background:url(../images/Nosotros__Banner_3.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.section-banner-us-3{
+    height:40vh;
+    background:url(../images/Nosotros__Banner_4.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.section-banner-us-4{
+    height:40vh;
+    background:url(../images/Nosotros__Banner_5.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.section__imagen-text{
+    height:100%;
+    padding:5rem 0;
+}
+.imagen-text__paragraph{
+    font-size:1.9rem;
+    line-height:3rem;
+    font-weight:400;
+}
 .banner-us__box{
     height:40vh;
 }
-
+.section-us__image-full{
+    height:80vh;
+    padding:10rem 0;
+    
+}
 /* Brainlang */
 .brainlang__content-header{
     background:#689DC3;
@@ -3026,9 +3077,19 @@ padding:10rem 0;
 /* Academy*/
 .academy__container-header{
 
-    background:#4576b7;
+    background:url(../images/Banner_Principal-academy.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  
 }
-
+.academy__banner{
+    background:url(../images/banner2_academy.webp);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
 /* Accordion */
  /* @media (max-width:768px){ */
     .accordion{
