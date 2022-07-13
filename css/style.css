@@ -2887,8 +2887,9 @@ padding:10rem 0;
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
-  
+    
 }
+
 .banner__paragraph{
     font-size:2rem;
     font-weight:300;
@@ -2898,13 +2899,15 @@ padding:10rem 0;
 
 }
 .section-banner-us{
-    height:40vh;
+    height:50vh;
     background:url(../images/Nosotros__Banner_2.webp);
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
 }
+
+
 .section-banner-us-2{
     height:40vh;
     background:url(../images/Nosotros__Banner_3.webp);
@@ -2939,12 +2942,25 @@ padding:10rem 0;
     font-weight:400;
 }
 .banner-us__box{
-    height:40vh;
+    height:100%;
 }
+.banner-us__container{
+    height:100%;
+}
+
 .section-us__image-full{
     height:80vh;
     padding:10rem 0;
     
+}
+@media (max-width: 768px){
+    .section-banner-us{
+        height:100%;
+        padding:2rem;
+    }
+    .section__imagen-text{
+        height:100%;        
+    }
 }
 /* Brainlang */
 .brainlang__content-header{
@@ -2963,7 +2979,11 @@ padding:10rem 0;
     display:flex;
     justify-content:space-between;
     align-items:center;
-
+}
+@media (max-width: 768px){
+    .col-2{
+        flex-direction:column;
+    }
 }
 .brainlang__header-left{
     height:100%;
