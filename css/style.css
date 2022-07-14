@@ -58,7 +58,7 @@ h4{
     background:#c62373;
 }
 .bg-2{
-    background:#E2EDED;
+    background:#e4e4e4;
  
 }
 .bl{
@@ -1093,15 +1093,7 @@ padding:0;
     
 
 }
-.button-learn{
-    text-decoration:none;
-    font-size:2.4rem;
-    margin:5rem 0;
-    border:2px solid rgba(4, 50, 148,1);
-    border-radius: 5px;
-    padding:1rem 2rem;
-    color:rgba(4, 50, 148,1);
-}
+
 @media (max-width: 768px){
     .container-learn{
         height:100%;
@@ -1237,11 +1229,14 @@ padding:0;
   
   
 }
-.button-learn{
+
+.button-evolution{
+    padding:1rem 2rem;
+    text-decoration:none;
     display:inline-flex;
     margin:5rem 0;
     background:#E81C75;
-    border:none;
+    border-radius: 5px;
     color:#fff;
     font-size:2rem;
 }
@@ -1640,7 +1635,7 @@ display:none;
     text-decoration:none;
     text-transform:uppercase; 
     font-size:1.6rem;
-    border:2px solid var(--color-services);
+    /* border:2px solid var(--color-services); */
     padding:2rem 3rem;
     margin:1rem 0;
     transition:all .5s ease; 
@@ -1710,7 +1705,8 @@ display:none;
 
 }
 .services__band-title{
-    color:rgb(39, 39, 39);
+    color:var(--color-evolution);
+   
 }
 
 
@@ -1812,7 +1808,7 @@ display:none;
 } */
 .section-unknown{
     height:100%;
-    padding:10rem 0;
+    padding:5rem 0;
 }
 .container-section-unknown{
    
@@ -2862,7 +2858,7 @@ padding:10rem 0;
   padding:5rem;
   width:80%;
   margin:10rem auto;
-  background:#B4B4B4;
+ 
 }
 .nitrox-customer__card-name{
     font-weight:bold;
@@ -2900,7 +2896,7 @@ padding:10rem 0;
 }
 .section-banner-us{
     height:50vh;
-    background:url(../images/Nosotros__Banner_2.webp);
+    background:linear-gradient(360deg,#5b83ae,rgb(223, 223, 223)); 
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -2936,10 +2932,14 @@ padding:10rem 0;
     height:100%;
     padding:5rem 0;
 }
+.imagen-text__title{
+    color:rgb(113, 110, 110);
+}
 .imagen-text__paragraph{
     font-size:1.9rem;
-    line-height:3rem;
+    line-height:2.5rem;
     font-weight:400;
+    color:var(--color-evolution)
 }
 .banner-us__box{
     height:100%;
@@ -2947,7 +2947,11 @@ padding:10rem 0;
 .banner-us__container{
     height:100%;
 }
-
+.banner-us__paragraph{
+    font-size:2.4rem;
+    color:#fff;
+    line-height:3.3rem;
+}
 .section-us__image-full{
     height:80vh;
     padding:10rem 0;
@@ -3110,14 +3114,43 @@ padding:10rem 0;
     background-size:cover;
     background-attachment: fixed;
 }
+/*  Business-plan*/
+.business-plan__container-header{
+    height:100vh;
+
+  
+
+}
+
+
+.business-plan__box-header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.business-plan__iframe{
+    margin-top:10rem;
+    width:80%; 
+    height:70%;
+}
+.section-banner__business-plan{
+    height:40vh;
+    background:linear-gradient(360deg, var(--color-evolution),var(--color-main));
+    background-attachment:fixed;
+}
+.section__business-presentation{
+    height:50vh;
+    background:#ffffff;
+}
 /* Accordion */
  /* @media (max-width:768px){ */
     .accordion{
-        height:45rem;
+        height:100%;
         max-width:800px;
         background:rgb(255, 255, 255);
         /* border:1px solid #2D91CE; */
-        overflow:hidden;
+        /* overflow:hidden; */
         
 } 
 .contentBx{
