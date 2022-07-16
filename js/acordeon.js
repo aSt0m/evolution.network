@@ -10,7 +10,7 @@ for(i = 0; i<accordion.length; i++){
 
 
 
-const tabTitle = document.querySelectorAll(".tabs__title");
+const tabTitle = document.querySelectorAll(".tabs__title-tab");
 const tabBloque = document.querySelectorAll(".tabs__bloque");
 
 
