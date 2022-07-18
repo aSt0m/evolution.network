@@ -276,7 +276,8 @@ h4 {
 .logo {
     height: 5rem;
     width: 12rem;
-    object-fit: containe;
+    -o-object-fit: containe;
+       object-fit: containe;
 
 }
 
@@ -457,7 +458,8 @@ h4 {
     .logo {
         height: 6rem;
         width: 8rem;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
 
     }
 
@@ -1582,7 +1584,8 @@ h4 {
 
 .menu-cart__image {
     height: 10rem;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .menu-cart__box-item {
@@ -1912,7 +1915,8 @@ h4 {
 .blank__image {
     width: 30rem;
     height: 30rem;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .blank__container-text {
@@ -2150,8 +2154,9 @@ h4 {
 }
 
 .img-unknown {
-    height: 40rem;
-    object-fit: contain;
+    height: 50rem;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .unknown__right-down {
@@ -2178,8 +2183,10 @@ h4 {
 .unknown__image-right {
     width: 8rem;
     height: 8rem;
-    object-fit: contain;
-    filter: drop-shadow(2px 2px 10px rgb(202, 200, 200))
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-filter: drop-shadow(2px 2px 10px rgb(202, 200, 200));
+            filter: drop-shadow(2px 2px 10px rgb(202, 200, 200))
 }
 
 .unknown__title-right-down {
@@ -2222,10 +2229,18 @@ h4 {
         order: 3;
         padding: .5rem;
     }
-
+    .unknown__container-right{
+        width:100%;
+    }
+    .unknown__container-right-up{
+        width:100%;
+        height:100%;
+    }
     .img-unknown {
-        height: 20rem;
-        object-fit: contain;
+        height: 40rem;
+        width:40rem;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
 
 }
@@ -2288,7 +2303,9 @@ h4 {
     .cronos__images {
         height: 10rem;
 
-        object-fit: contain;
+        -o-object-fit: contain;
+
+           object-fit: contain;
     }
 
     .cronos__subtitle {
@@ -3349,6 +3366,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 .section__imagen-text {
@@ -3401,7 +3419,10 @@ h4 {
         padding: 0;
         width: 100%;
     }
-
+    .imagen-text__imagen{
+        -o-object-fit:contain;
+           object-fit:contain;
+    }
     .imagen-text__right.col-l {
         padding: 0;
         width: 100%;
@@ -3420,9 +3441,8 @@ h4 {
     height: 87vh;
 }
 
-.brainlang__box {
+.header-brainlang__box {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -3506,6 +3526,8 @@ h4 {
 
 .brainlang__title-header {
     color: #fff;
+    
+  
     font-size: 6rem;
 }
 
@@ -3533,28 +3555,62 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    .brainlang__box {
-
+    .header-brainlang__box {
+        height:100%;
         flex-direction: column-reverse;
-
+        align-items:space-between;
+        justify-content:space-between;
     }
-
+    /* .brainlang__container-right{
+        width:50rem;
+    } */
+    .brainlang__header-right {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+    
+    }
+    .brainlang__header-left{
+        height:50%;
+        width:100%;
+    }
+    .brainlang__header-images{
+        height:35rem;
+        width:35rem;
+        -o-object-fit:contain;
+           object-fit:contain;
+        
+    }
+    .brainlang__container-brand{
+        width:100%;
+        text-align:center;
+    }
     .brainlang__title-header {
-
-        width: 30rem;
-
-        font-size: 3em;
+        width:100%;
+        text-align:center;
+        font-size: 3.6rem;
+        margin-top:10rem;
+        margin-bottom:0;
     }
 
     .brainlang__title-cta-header {
         color: #fff;
-        font-size: 5rem;
+        width:100%;
+        margin:0;
+        font-size: 3rem;
+        font-weight:bold;
     }
 
     .brainlang__title-cta-header {
         color: #fff;
     }
+    .brainlang__container-cloud{
+        margin:5rem 0 ;
+    }
+    .brainlang__cloud{
+        font-size:2.2rem;
 
+    }
     .brainlang__element-container {
         text-align: left;
     }
@@ -3569,7 +3625,45 @@ h4 {
         margin: 5rem 0;
     }
 }
+.brainlang__box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.brainlang__container-video{
+    padding:0;
+    width:50%;
+}
+.brainlang__container-text{
+    width:50%;
+}
+@media (max-width: 768px){
+    .brainlang__box{
+        flex-direction:column;
+        padding:0;
+        width:100%;
+    }
+    .brainlang__container-video{
+        padding:0;
+        width:100%;
+        margin-bottom:5rem;
+    }
+    .brainlang__container-text{
+        width:100%;
+        padding:0;
+        text-align:center;
+    }
+}
+.brainlang-customers__container{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+    justify-content:center;
 
+}
+.brainlang-customers__subtitle{
+    text-align:center;
+}
 .brainlang-customers__video {
     width: 70rem;
     height: 50rem
@@ -3583,9 +3677,7 @@ h4 {
 
 }
 
-.brainlang__box {
-    margin-bottom: 4rem;
-}
+
 
 /* .btn__brainlang{
     color:#689DC3;
@@ -3623,11 +3715,10 @@ h4 {
     padding-left: 5rem;
     width: 50%;
 }
-
 .col-l {
     padding-left: 5rem;
     width: 50%;
-
+    
 }
 
 .brainlang-method__container-text {
@@ -3643,18 +3734,32 @@ h4 {
 
 .brainlang-method__title {
     margin: 0;
-
+    
 }
 
 .brainlang-method__subtitle {
     margin: 0;
-
+    
 }
 
 .brainlang-method__text {
     font-size: 2rem;
     text-align: left;
     margin: 0;
+}
+@media (max-width: 768px){
+    .col-r {
+        padding-left:0;
+        width: 100%;
+    }
+    .col-l {
+        padding-left: 0;
+        width: 100%;
+        
+    }
+    .section__brainlang-method {
+        padding: 5rem 0;
+    }
 }
 
 .brainlang-method__paragraph {
@@ -3699,7 +3804,7 @@ h4 {
         line-height: 3rem;
     }
 
-    .blank-section {}
+   
 }
 
 /* Academy*/
@@ -3942,7 +4047,8 @@ h4 {
 .tabs__bloque-image {
     height: 45rem;
     width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 
 }
 
