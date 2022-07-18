@@ -878,6 +878,11 @@ h4 {
     .title-video {
         text-align: center;
     }
+    .main-video {
+        height: 40vh;
+        width: 70%;
+        background: #838292;
+    }
 }
 
 .section-carrousel {
