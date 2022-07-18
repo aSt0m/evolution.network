@@ -801,11 +801,11 @@ h4 {
 .hero-video {
     position: relative;
     height: 87vh;
-    width: 100%;
+    width: 100vw;
     -o-object-fit: cover;
     object-fit: cover;
     overflow-x: hidden;
-    ;
+    
 }
 
 @media (max-width: 768px) {
