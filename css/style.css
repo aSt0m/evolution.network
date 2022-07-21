@@ -3918,10 +3918,19 @@ h4 {
 }
 
 .section__business-presentation {
-    height: 50vh;
+    height: 60vh;
     background: #ffffff;
 }
+.business__container-presentation{
+    height:100%;
+}
+.business__box-presentation{
+    height:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
 
+}
 @media (max-width: 768px) {
     .business-plan__title {
         margin-top: 6rem;
@@ -3933,7 +3942,32 @@ h4 {
         height: 50%;
     }
 }
-
+/* Section Contact */
+.contact__header {
+    height: 100vh;
+    padding-top: 20vh;
+    background: url("../images/Contacto.webp");
+    background-size: cover;
+    background-position: center;
+    /* background-blend-mode: screen; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+.contact__content-header{
+    justify-content:flex-end;
+}
+.contact__header-right{
+    margin:0;
+    height:50%;
+}
+.contact__title{
+    color:var(--color-evolution)
+}
+.contact__address{
+    font-size:5rem;
+    color:var(--color-main);
+    margin:0;
+}
 /* Accordion */
 /* @media (max-width:768px){ */
 .accordion {
