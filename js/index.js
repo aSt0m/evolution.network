@@ -33,7 +33,6 @@ const barras = document.querySelectorAll('.ham span');
 
 
 
-
 ham.addEventListener('click', () => {
   enlaces.classList.toggle('activado');
   barras.forEach(child => {
@@ -54,7 +53,7 @@ const categoria = document.querySelector(".categoria");
 
 // categoria.addEventListener('click',()=>{
 //   containerDrop.classList.toggle('act')
- 
+
 // })
 
 car.addEventListener('click',()=>{
@@ -68,16 +67,28 @@ menuShopClose.addEventListener('click',()=>{
   // car.style.right = "15rem";
   menuShop.classList.toggle("activee");
 })
+// Button brainlang
+const brainlangWindowContainer =document.querySelectorAll('.brainlang-window__container')
+const infoBrainlang = document.querySelectorAll('.info-brainlang')
+const brainlangClose = document.querySelectorAll('.brainlang-window__x')
 
-// const variable = document.querySelectorAll('.nav-down')
-// const link = document.querySelectorAll('.link-2')
-// link.forEach((element,i) => {
-//   console.log(element,i)
-  
+infoBrainlang.forEach((element,i)=>{
 
-  
-  
-// });
+  infoBrainlang[i].addEventListener( 'click', (e)=>{
+    e.preventDefault()
+    brainlangWindowContainer[i].classList.add("active")
+    console.log(i)
+  })  
+    brainlangWindowContainer.forEach( (element, i )=>{
+      
+    })
+  brainlangClose[i].addEventListener( "click", ()=>{
+    brainlangWindowContainer[i].classList.remove('active')
+  })
+})
+
+
+
 
 
 
