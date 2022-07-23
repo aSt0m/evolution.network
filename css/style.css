@@ -2370,7 +2370,13 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-
+.buy__box-list{
+    height:40rem;
+    
+}
+.buy__container-list{
+    min-height:15rem;
+}
 .buy__list {
     font-size: 2rem;
 }
@@ -2412,6 +2418,8 @@ h4 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+       
+       
     }
 
     .buy__container-left {
@@ -3886,11 +3894,11 @@ h4 {
 
 .brainlang-window__x {
 
-    content: url(../images/cancel.png);
+    /* content: url(../images/error.png); */
     display: inline-flex;
     position: absolute;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     top: 1.5rem;
     right: 3rem;
 
@@ -3926,6 +3934,7 @@ h4 {
 
 .brainlang-window__paragraph {
     font-size: 1.8rem;
+    color:#3a3a3a;
 
 }
 .db{
