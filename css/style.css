@@ -872,7 +872,10 @@ h4 {
     ;
     background: #838292;
 }
-
+.index__container-video{
+    width:70%;
+    
+  }
 .title-video {
     color: #575861;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -1554,6 +1557,12 @@ h4 {
 
 
 }
+@media (max-width: 768px){
+    .menu-cart__box{
+        outline:red 1px solid;
+        left:100rem;
+    }
+}
 
 .menu-cart__box-product {
     height: 50vh;
@@ -2151,7 +2160,7 @@ h4 {
 .unknown__advantage {
     font-size: 2rem;
     line-height: 2.8rem;
-    list-style: circle;
+    list-style: none;
 
 
 }
@@ -2273,6 +2282,7 @@ h4 {
 
 /* Section cronos */
 .cronos-section {
+    margin:12rem 0;
     background: #fff;
     height: 100%;
 }
@@ -2311,7 +2321,7 @@ h4 {
 .cronos__paragraph {
     color: #595A5D;
     flex-basis: 75%;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2.5rem;
 }
 
@@ -2376,6 +2386,8 @@ h4 {
 }
 .buy__container-list{
     min-height:15rem;
+    text-align: left;
+    padding-left:2rem;
 }
 .buy__list {
     font-size: 2rem;
@@ -3694,6 +3706,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5rem 0;
 }
 
 .brainlang__container-video {
@@ -3800,6 +3813,8 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left:5rem;
+    color:#3A3A3A
 }
 
 .section__brainlang-method {
@@ -3821,7 +3836,9 @@ h4 {
     text-align: left;
     margin: 0;
 }
-
+.brainlang-method__box{
+    margin-top:8rem;
+}
 @media (max-width: 768px) {
     .col-r {
         padding-left: 0;
@@ -3935,8 +3952,9 @@ h4 {
 .brainlang-window__paragraph {
     font-size: 1.8rem;
     color:#3a3a3a;
-
+    list-style:none;
 }
+
 .db{
     display:inline-flex;
     flex-direction:column;
@@ -4026,11 +4044,9 @@ h4 {
     color: #575861;
     margin: 0;
 }
-
-.business-plan__iframe {
-    margin-top: 3rem;
-    width: 70%;
-    height: 60%;
+.video-business{
+    margin: 10rem 0;
+   
 }
 
 .section-banner__business-plan {
@@ -4065,11 +4081,22 @@ h4 {
     height: 60vh;
     background: #ffffff;
 }
+.link-business{
+    height:100%;
 
+}
 .business__container-presentation {
     height: 100%;
 }
+.fontawesome{
+    width:10rem;
+    height:10rem;
+    position:absolute;
+    z-index:10000;
+    color:000;
+    outline: 1px solid red;
 
+}
 .business__box-presentation {
     height: 100%;
     display: flex;
@@ -4077,7 +4104,11 @@ h4 {
     align-items: center;
 
 }
-
+.title__presentation-plan{
+    text-align:center;
+    font-size:2.5rem;
+    color:#3A3A3A
+}
 @media (max-width: 768px) {
     .business-plan__title {
         margin-top: 6rem;
@@ -4112,9 +4143,15 @@ h4 {
 }
 
 .contact__title {
-    color: var(--color-evolution)
+    color: var(--color-evolution);
+    text-align:center;
+
 }
 
+.contact__header-subtitle{
+    font-size:3rem;
+    text-align:center;
+}
 .contact__address {
     font-size: 5rem;
     color: var(--color-main);
