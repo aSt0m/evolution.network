@@ -115,6 +115,9 @@ h4 {
 .margin-no {
     margin: 0;
 }
+.pd-10{
+    margin:0 10rem ;
+}
 
 /* Especiales */
 /* color button swiper */
